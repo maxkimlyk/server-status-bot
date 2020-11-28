@@ -1,0 +1,2 @@
+class NoData(RuntimeError):
+    pass
