@@ -33,7 +33,7 @@ async def start(ctx: context.Context, message: aiogram.types.Message):
 
 async def server_ip(ctx: context.Context, message: aiogram.types.Message):
     ip = await ip_getter.get(ctx)
-    logging.info('Got ip: ', ip)
+    logging.info('Got ip: %s', ip)
     await ctx.bot.send_message(message.chat.id, ip)
 
 
