@@ -5,4 +5,4 @@ http_timeout_seconds: 10
 ssh_user_hint: user
 ssh_port_hint: 22
 
-db_path_inside_container: /var/cache/system-status-bot/db.db
+db_path_inside_container: /var/cache/server-status-bot/db.db

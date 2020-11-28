@@ -11,7 +11,6 @@ COPY *.py ./
 COPY bot ./bot
 COPY createdb.sql ./
 COPY config.yaml ./
+COPY entrypoint.sh ./
 
-RUN mkdir /var/cache/system-status-bot
-RUN sqlite3 /var/cache/system-status-bot/db.db < createdb.sql
-ENTRYPOINT ["python", "run.py", "--config", "config.yaml"]
+ENTRYPOINT ["./entrypoint.sh"]

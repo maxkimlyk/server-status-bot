@@ -1,4 +1,4 @@
-CREATE TABLE keyvalue(
+CREATE TABLE IF NOT EXISTS keyvalue(
   key STRING PRIMARY KEY,
   value STRING
 );
